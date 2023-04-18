@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="My_paragraph"> I eat chicken</p>
+
+    <button onclick="changestyle()">CLICK ME</button>
+    <hr>
+    <p>This button counts when you click it</p>
+    <button onclick="addCounter()" id="counter_button">0</button>
+    <hr>
+    <p>Put the secret password</p>
+    <input id="my_Password">
+    <button id="inPut_buTTon"onclick='secretButton()'>Click me if you dare</button>
+    <hr>
+    <input id="my_input">
+    <button id="input_button" onclick="inputButton()">Click Me!!!!!!!</button>
+    <hr>
+    <script lang="js">
+        console.log("Hello World")
+        document.write("<h1>Hello World<h1>")
+        document.write("Welcome to my website!!!!!!!!!!!!!!!!")
+        function changestyle(){
+        let myParagraph=document.getElementById("My_paragraph")
+        myParagraph.innerHTML='This was modified by Deandre'
+        myParagraph.style='background: red; color:purple'
+        alert("You clicked a button!")
+        }
+
+        let counter=0
+
+        function addCounter(){
+            counter=counter + 1
+            let counterButton= document.getElementById("counter_button")
+            counterButton.innerHTML= counter
+        }
+
+            function secretButton(){
+            let myPassword=document.getElementById("my_Password")
+                if(myPassword.value=="Pizza") {
+              window.location= 'https://youtu.be/Sv5yCzPCkv8'
+                }
+            }
+
+function inputButton(){
+let myInput=document.getElementById("my_input")
+
+console.log(myInput.value)
+
+
+
+}
+
+
+
+        </script>
+
+</body>
+</html>
+
+
