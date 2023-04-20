@@ -2,6 +2,16 @@ let aquarium=document.getElementById("aquarium")
 
 
 let turtle= new RealTurtle.default(aquarium, {autoStart: true})
+turtle.setPosition(0,0)
+turtle.setFillStyle('Darkblue')
+turtle.beginPath()
+for(let i=0; i<4; i++){
+
+   turtle.right(90)
+   turtle.forward(300)
+}
+turtle.closePath()
+turtle.fill()
 
 turtle.setStrokeColorRGB(2,6,0)
 turtle.setFillStyle('gold')
@@ -21,7 +31,6 @@ for(let i=0; i<4; i++){
 
 turtle.closePath()
 turtle.fill()
-
 
 
 
