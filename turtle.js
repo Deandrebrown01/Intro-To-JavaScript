@@ -1,6 +1,4 @@
 let aquarium=document.getElementById("aquarium")
-
-
 let turtle= new RealTurtle.default(aquarium, {autoStart: true})
 turtle.setPosition(0,0)
 turtle.setFillStyle('Darkblue')
